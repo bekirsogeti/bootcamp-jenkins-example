@@ -5,14 +5,20 @@ pipeline{
     agent any
 
     stages{
-       step('CompileJob') {
-          build 'Compile Job'
+       stage('CompileJob') {
+           step {
+            build 'Compile Job'
+           }
        }
-       step('Test') {
-          build 'Test'
+       stage('Test') {
+           step {
+            build 'Test'
+           }
        }
-       step('Deploy') {
-          build 'Deploy'
+       stage('Deploy') {
+           step {
+            build 'Deploy'
+           }
        }
     }
 }
