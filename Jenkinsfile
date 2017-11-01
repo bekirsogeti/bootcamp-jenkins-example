@@ -4,7 +4,7 @@ pipeline{
 
     agent any
 
-    steps{
+    stages{
        step('CompileJob') {
           build 'Compile Job'
        }
