@@ -4,14 +4,14 @@ pipeline{
 
     agent any
 
-    stages{
-       stage('CompileJob') {
+    steps{
+       step('CompileJob') {
           build 'Compile Job'
        }
-       stage('Test') {
+       step('Test') {
           build 'Test'
        }
-       stage('Deploy') {
+       step('Deploy') {
           build 'Deploy'
        }
     }
