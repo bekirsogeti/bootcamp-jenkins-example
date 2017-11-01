@@ -6,17 +6,17 @@ pipeline{
 
     stages{
        stage('CompileJob') {
-           step {
+           steps {
             build 'Compile Job'
            }
        }
        stage('Test') {
-           step {
+           steps {
             build 'Test'
            }
        }
        stage('Deploy') {
-           step {
+           steps {
             build 'Deploy'
            }
        }
