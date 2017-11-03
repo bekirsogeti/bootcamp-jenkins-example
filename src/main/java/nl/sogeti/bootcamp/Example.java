@@ -4,6 +4,5 @@ public class Example {
 
     public String getAbcd() {
         return "ABC";
-        echo "hi";
     }
 }
